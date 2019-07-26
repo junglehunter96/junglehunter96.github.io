@@ -8,7 +8,6 @@ header-img: "img/home-bg-o.jpg"
 tags:
     - JavaScript
 	- 原型/原型链
-
 ---
 
 > “Yeah It's on. ”

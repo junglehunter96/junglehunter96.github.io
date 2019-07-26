@@ -7,8 +7,8 @@ author:     "Axin"
 header-img: "img/home-bg-o.jpg"
 tags:
     - 工具链
-	- VSCode
-	- Eslint
+    - VSCode
+    - Eslint
 
 ---
 
