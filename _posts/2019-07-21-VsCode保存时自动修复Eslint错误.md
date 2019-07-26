@@ -6,7 +6,6 @@ date:       2019-07-21
 author:     "Axin"
 header-img: "img/home-bg-o.jpg"
 tags:
-    - 工具链
     - VSCode
     - Eslint
 
