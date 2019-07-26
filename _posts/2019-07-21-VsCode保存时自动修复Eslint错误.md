@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "VSCode保存时自动修复格式错误"
-subtitle:   " \"Hello World, Hello Blog\""
+subtitle:   " \"Eslint\""
 date:       2019-07-21
 author:     "Axin"
 header-img: "img/home-bg-o.jpg"
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-> “VSCode中elint设置相关”
+> “VSCode中Eslint设置相关”
 
 ## VSCode保存时自动修复Eslint错误
 
