@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Welcome to Axin Blog"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "从JS编译原理到作用域及其闭包"
+subtitle:   " \"base on JavaScript\""
 date:       2019-01-25
 author:     "Axin"
 header-img: "img/home-bg-o.jpg"
