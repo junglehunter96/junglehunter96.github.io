@@ -1,0 +1,120 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is Axin."
+header-img: "img/about-bg.jpg"
+multilingual: true
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        有内容的前端攻城狮
+    </blockquote>
+        大家好，我是阿星，目前作为一名本人自学前端技术一年有余，主要开发框架为Vue全家桶，掌握前端相关的主流技术，今后打算往Vue+TypeScript的方向发展
+        关注互联网技术，社区爱好者，爱倒腾，理解学习能力强，能快速融入团队。
+
+
+    <p style="text-align:right;">
+        —— <a href="https://caojiele.com/about/">周  鑫 － 「自我简介」 </a>
+    </p>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        Think of what you want to know what you need.
+    </blockquote>
+    Hello everyone, I am Axin, currently as a self-taught front-end technology for more than a year, the main development framework for the Vue family bucket, master the front-end related mainstream technology, the future intends to the Vue-TypeScript direction of development Pay attention to Internet technology, community enthusiasts, love to pour, understand the ability to learn, can quickly integrate into the team.
+
+    <p style="text-align:right;">
+    -- Axin
+    </p>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "jlcaoblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
