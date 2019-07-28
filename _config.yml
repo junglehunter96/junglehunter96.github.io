@@ -67,7 +67,7 @@ ga_domain: junglehunter96.xyz
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "热爱codding，更爱生活。"
-sidebar-avatar: /img/avatar-Axin.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-Axin.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
