@@ -2,16 +2,16 @@
 layout:     post
 title:      "Event Loop 中的“渲染时机”"
 subtitle:   " \"Event Loop\""
-date:       2019-07-25
+date:       2019-07-27
 author:     "Axin"
 header-img: "img/home-bg-o.jpg"
 tags:
     - Vue
     - 事件循环
-	- 学习总结
+    - 学习总结
 ---
 
-> “学习---掘金小册-前端性能原理与实践”
+> “学习-掘金小册-前端性能原理与实践”
 
 ## Event Loop 中的“渲染时机”
 
